@@ -1,0 +1,14 @@
+import math
+mean_population = 500
+sd_population = 80
+n = 100
+z = 1.96
+mean_sample = mean_population 
+sd_sample = sd_population / math.sqrt(n)
+
+A =  mean_sample - z * sd_sample
+
+B =  mean_sample + z * sd_sample
+
+print('{:.2f}'.format(A))
+print('{:.2f}'.format(B))
